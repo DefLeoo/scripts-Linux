@@ -1,0 +1,25 @@
+ALTERANDO SENHA DO USER
+-Na tela inicial
+
+  ctrl + alt + f1
+
+-Para visualizar usuários no sistem
+
+   ls/home
+
+-Escolha o nome do perfil que você deseja alterar a senha
+ 
+  passwd username
+
+-Vai aparecer as seguintes abas para você usar senha antiga e a nova senha
+  
+  Enter new UNIX password:
+  Retype new UNIX password:
+
+-Se tudo funcionou de forma correta a seguinte mensagem vai aparecer
+ 
+  passwd:Authentication token manipulation error
+
+-Caso de algum erro quer dizar que a partição é montada apenas para acesso de leitura para mudar isso use
+
+  mount-rw -o remount          
