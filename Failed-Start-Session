@@ -1,0 +1,27 @@
+ERRO AO INICIAR UBUNTO
+
+-Na tela inicial
+
+  ctrl + alt + f1
+
+-Entre com seu nome de usuário e depois pressione a teclar “enter”. Agora digite a sua senha e tecle “enter” novamente;
+
+-Primeiramente, você pode tentar instalar o Unity Desktop com o seguinte comando:
+  
+  sudo apt-get install ubuntu-desktop
+
+-Se o Unity Desktop já estiver instalado, tente reinstalar usando o seguinte comando:
+
+  sudo apt-get install --reinstall ubuntu-desktop
+
+-Uma vez que o Unity Desktop foi instalado ou reinstalado. Use o seguinte comando para reiniciar o sistema:
+
+  sudo reboot
+
+-Caso ainda não funcione, tecle ctrl + alt + f1 
+  
+  sudo dpkg-reconfigure -a        
+
+-Às vezes, isso deve resolver o problema “Failed To Start Session” no Ubuntu. Em último caso, tente instalar o Gnome usando o comando abaixo:
+
+  sudo apt-get install gnome-shell ubuntu-gnome-desktop  
