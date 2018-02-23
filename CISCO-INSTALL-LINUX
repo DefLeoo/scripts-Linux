@@ -1,0 +1,32 @@
+                                echo 'INSTALL CISCO NO LINUX'
+                                
+ 1 - Faça o download do Cisco Packet Tracer (escolha as versões 32/64).
+     http://labcisco.blogspot.com.br/p/laboratorios.html
+ 
+ 2 - Mova a pasta transferida para o local apropriado (Área de trabalho ou Downloads ou em qualquer outro lugar).
+ 
+ 3 - Abra a pasta “.tar.gz” com “Archive Manager” e “Extrair” o conteúdo para a localização apropriada.
+ 
+ 4 - Abra o terminal usando Ctrl+Alt+T.
+ 
+ 5 - Altere o diretório para a pasta (no local apropriado) usando cd. [Se armazenado no desktop cd ~/Desktop/PacketTracer62Student]
+ 
+ 6 - Execute o arquivo de instalação usando ./install (caso nao funcione execute o comando chmod +x intall)
+ 
+ 7 - Aceite os termos e condições pressionando Y
+ 
+ 8 - Ele pedirá permissões de raiz para copiar arquivos para /opt/pt, insira sua senha para continuar a instalação.
+ 
+ 9 - apos esse processo já foi instalado, porem os ícones instalado não funcionam, então você abre um editor de sua preferencia (vim, sublime,gedit, etc) e cola o seguinte trecho:
+ 
+ 10 -  [Desktop Entry]
+       Name= Packettracer
+       Comment=Networking
+       GenericName=Cisco Packettracer
+       Exec=/opt/pt/packettracer
+       Icon=/home/douglas/app/Ubuntu/PT/art/app.png
+       StartupNotify=true
+       Terminal=false
+       Type=Application
+       
+ 11 - apos copiar você salva o arquivo como Packettracer.desktop e esta funcionando!      
