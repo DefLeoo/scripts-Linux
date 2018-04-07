@@ -78,13 +78,40 @@ echo 'Cole este arquivo '
 
 echo 'rode no servidor tudo ok'
 
+echo 'URL amigavéis'
+
+sudo a2enmod rewrite
+
+sudo service apache2 restart
+
+echo 'Dentro da pasta var'
+
+ sudo chmod 777 -R www
+ 
+ echo'dentro da pasta etc/apache2/sites-available$'
+ 
+ sudo nano sudo nano 000-default.conf
+ 
+ -altero o arquivo /var/www/html
+ -para /var/www
+ 
+ sudo service apache2 restart
+ 
+
 echo 'Instalar phpmyadmin'
   
   sudo apt-get update
   sudo apt-get install phpmyadmin php-mbstring php-gettext
   sudo phpenmod mcrypt
   sudo phpenmod mbstring
-  sudo systemctl restart apache2
+  
+//CONFIGURANDO PHPMYADMIN
+etc/apache2/ sudo nano apache2.conf
+
+//No domento acrescente a linha
+/etc/phpmyadmin/apache.conf
+  
+sudo service apache2 restart
 
 
 //CONFIGURANDO SENHA E USUÁRIO MARIADB
